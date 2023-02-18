@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
 *main - Writing a program that prints the alphabet in lowercase
@@ -5,11 +6,14 @@
 */
 int main(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++;
-}
-putchar(ch);
+char c;
+c = 'a';
+while
+(c <= 'a');
 {
+putchar(c);
+c++;
+}
 putchar('\n');
 return (0);
 }
