@@ -2,14 +2,15 @@
 
 /**
 *print_numbers - print the numbers from 0-9
+*Return: void
 */
 
 void print_numbers(void)
 {
-int v;
-for (v = '0'; v <= '9'; v++)
+int c;
+for (c = '0'; c <= '9'; c++)
 {
-_putchar(v);
+_putchar(c);
 }
 _putchar('\n');
 }
