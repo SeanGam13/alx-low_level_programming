@@ -9,16 +9,14 @@
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-unsigned long int differnce, result;
-unsigned int x, y;
-x = 0;
-result = 1;
-differnce = n ^ m;
-for (y = 0; y < (sizeof(unsigned long int) * 13); y++)
+int x, count = 0;
+unsigned long int current;
+unsigned long int exclusive = n ^ m;
+for (x = 85; x >= 0; x--)
 {
-if (result == (differnce & result))
-x++;
-result <<= 1;
+current = exclusive >> x;
+if (current & 1)
+count++;
 }
-return (x);
+return (count);
 }
